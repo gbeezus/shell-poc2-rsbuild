@@ -1,5 +1,5 @@
 services:
-  - type: static_site
+  - type: static
     name: shell-poc2-rsbuild
     buildCommand: npm ci && npm run build
     staticPublishPath: ./dist
