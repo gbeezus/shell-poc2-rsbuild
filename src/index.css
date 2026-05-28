@@ -1,0 +1,51 @@
+/* Global reset + base. The brand overlay at /brand/overrides.css is
+   injected via rsbuild html.tags (see rsbuild.config.ts) — it loads
+   before this file and defines the USWDS-aligned :root tokens that the
+   fallback values below mirror. */
+
+:root {
+  --background-site: #fff;
+  --text-primary: #1b1b1b;
+  --text-secondary: #5c5c5c;
+  --grayscale-white: #fff;
+  --grayscale-gray-1: #f1f1f1;
+  --grayscale-gray-2: #e6e6e6;
+  --grayscale-gray-3: #adadad;
+  --ui-border: #adadad;
+  --ui-border-light: #e6e6e6;
+  --ui-background-light: #f1f1f1;
+  --font-family-primary: 'Source Sans Pro', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background-site);
+  color: var(--text-primary);
+  font-family: var(--font-family-primary);
+  margin: 0;
+}
+
+a {
+  color: var(--brand-blue-base);
+}
+
+code {
+  background: var(--ui-background-light);
+  border-radius: 0.2rem;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  padding: 0.1rem 0.35rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--brand-blue-dark);
+}
+
+p {
+  line-height: 1.5;
+}

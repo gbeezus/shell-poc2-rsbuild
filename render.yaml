@@ -1,0 +1,20 @@
+services:
+  - type: static_site
+    name: shell-poc2-rsbuild
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./dist
+    # React Router's BrowserRouter needs server-side fallback to
+    # index.html for client-side routes (/, /tool). Without this,
+    # hitting /tool directly returns 404.
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: NODE_VERSION
+        value: '24'
+      # PUBLIC_REMOTE_URL is read at build time (loadEnv in
+      # rsbuild.config.ts) and baked into the bundle. A change to this
+      # value requires a redeploy, not just a restart.
+      - key: PUBLIC_REMOTE_URL
+        value: https://third-party-poc2-rsbuild.onrender.com/remoteEntry.js

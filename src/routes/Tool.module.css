@@ -1,0 +1,31 @@
+.loading {
+  background: var(--ui-background-light);
+  border: 1px dashed var(--ui-border);
+  border-radius: 0.25rem;
+  color: var(--text-secondary);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.fallback {
+  background: var(--other-red-light-1, #f8eeee);
+  border: 1px solid var(--other-red-base, #b50909);
+  border-left: 4px solid var(--other-red-base, #b50909);
+  border-radius: 0.25rem;
+  padding: 1rem 1.25rem;
+}
+
+.fallback h3 {
+  color: var(--other-red-dark, #8b0a03);
+  margin-top: 0;
+}
+
+.fallback button {
+  background: var(--brand-blue-base);
+  border: 1px solid var(--brand-blue-base);
+  border-radius: 0.25rem;
+  color: var(--grayscale-white);
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.9rem;
+}

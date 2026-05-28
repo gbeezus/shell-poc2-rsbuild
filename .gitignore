@@ -1,0 +1,25 @@
+# Dependencies
+/node_modules
+
+# Build output
+/dist
+
+# rsbuild / rspack cache
+/.rsbuild
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env files (local-only secrets / overrides)
+.env
+.env.local
+.env.*.local
+
+# Editor / OS
+.DS_Store
+/.vscode
+/.idea

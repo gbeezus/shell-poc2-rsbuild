@@ -1,0 +1,24 @@
+/* Generated from lib/themes/uswds-alt.json by scripts/dtcg-to-css.mjs. Do not edit by hand. */
+:root {
+  --brand-blue-base: #287d80;
+  --brand-blue-light: #7dd4cc;
+  --brand-blue-light-1: #b1e6e0;
+  --brand-blue-light-2: #dbf3f0;
+  --brand-blue-dark: #1f5251;
+  --brand-blue-dark-1: #0f3030;
+  --brand-ocean-blue-base: #fee685;
+  --brand-ocean-blue-light: #fff5c2;
+  --brand-ocean-blue-light-1: #fffae3;
+  --brand-ocean-blue-dark: #936f38;
+  --brand-ocean-blue-dark-1: #5c4423;
+  --other-red-base: #b50909;
+  --other-red-dark: #8b0a03;
+  --other-red-dark-1: #5c0a00;
+  --other-red-light: #f4e3db;
+  --other-red-light-1: #f8eeee;
+  --other-green-base: #00a91c;
+  --other-green-light: #e3f5e1;
+  --other-yellow-base: #ffbe2e;
+  --other-yellow-light: #fff5c2;
+  --font-family-primary: var(--font-public-sans), 'Source Sans Pro', system-ui, sans-serif;
+}
